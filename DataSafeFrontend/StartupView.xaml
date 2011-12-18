@@ -1,0 +1,19 @@
+﻿<Page x:Class="DataSafeFrontend.StartupView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d"
+      d:DesignHeight="350" d:DesignWidth="500"
+	Title="Startup">
+   
+    <Canvas>
+        <Menu Name="HeadMenu" Background="LightBlue" Height="30" Width="500" BorderBrush="Black">
+            <MenuItem Name="MenuItemNewProfile" Header="New Profile" Margin="25,5,0,0" Click="MenuItemNewProfile_Click" />
+            <MenuItem Name="MenuItemLoadProfile" Header="Load Profile" Margin="25,5,0,0" Click="MenuItemLoadProfile_Click" />
+            <MenuItem Name="MenuItemDeleteProfile" Header="Delete Profile" Margin="25,5,0,0" Click="MenuItemDeleteProfile_Click" />
+            <MenuItem Name="MenuItemAbout" Header="About" Margin="25,5,0,0" Click="MenuItemAbout_Click" />
+        </Menu>
+        <ListBox Name="ListBoxProfiles" Height="320" Width="500" Margin="0,30,0,0" SelectionChanged="ListBoxProfiles_SelectionChanged" /> 
+    </Canvas>
+</Page>
